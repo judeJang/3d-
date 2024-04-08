@@ -1,0 +1,48 @@
+.card {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 8px 0;
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.card-header,
+.card-content {
+  margin: 10px 0;
+}
+
+.card-header {
+  cursor: pointer;
+}
+
+.card-header span {
+  font-weight: 600;
+}
+
+.card-body {
+  height: 0;
+  overflow: hidden;
+  transition: 0.1s;
+  font-size: 14px;
+}
+
+.icon {
+  right: 0;
+  position: absolute;
+  content: '';
+  display: block;
+  top: 6px;
+  border: solid #000;
+  width: 4px;
+  height: 4px;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+
+  &.iconRow {
+    transform: rotate(224deg);
+  }
+}

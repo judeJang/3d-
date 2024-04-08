@@ -1,0 +1,114 @@
+.c-modal {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgb(0, 0, 0, 0.3);
+  transform: none;
+  display: table;
+  transition: opacity 0.3s ease;
+
+  &__wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__dialog {
+    position: absolute;
+    width: 800px;
+    height: 350px;
+    // max-height:500px;
+    // overflow-y:scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+    transition: all 0.3s ease;
+  }
+
+  &__header {
+    text-align: left;
+    color: #000;
+  }
+
+  &__body {
+    text-align: left;
+  }
+}
+
+.c-alert {
+  &__dialog {
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 5px #777;
+  }
+
+  &__body {
+    padding: 5px;
+    text-align: left;
+  }
+
+  &__footer {
+    button {
+      float: right;
+      width: 100px;
+    }
+  }
+}
+
+// 팝업 위치 조정 필요(bubble 참고)
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: none;
+
+  &__dialog {
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    width: 400px;
+    height: 500px;
+    overflow-y: scroll;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+}
+
+// transition
+// 오버레이 트랜지션
+.modal-enter-from {
+  opacity: 0;
+}
+
+.modal-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-to .c-modal__dialog,
+.modal-leave-from .c-modal__dialog {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

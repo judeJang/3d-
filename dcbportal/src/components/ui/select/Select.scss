@@ -1,0 +1,70 @@
+.custom-select {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  height: 40px;
+  line-height: 40px;
+
+  .selected {
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-size: 13px;
+    padding-left: 8px;
+    cursor: pointer;
+    user-select: none;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 18px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-color: #333 transparent transparent transparent;
+    }
+  }
+
+
+  .items {
+    overflow-y: scroll;
+    max-height: 300px;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+
+    .item {
+      padding-left: 8px;
+      cursor: pointer;
+      user-select: none;
+      font-size: 14px;
+      color: #ccc;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 8px;
+      background-color: #f5f6f7;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+    }
+  }
+
+
+  .selectHide {
+    display: none;
+  }
+}
+

@@ -1,0 +1,169 @@
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+$dark: #343a40;
+$default : #00a56a;
+
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: #000;
+  background-color: $default;
+  color:#fff;
+
+  // size =======================================
+  &.sm {
+    width: 120px;
+    height: 35px;
+  }
+
+  &.lg {
+    width: 270px;
+    height: 50px;
+  }
+
+  &:hover {
+    transition: 0.5s;
+    opacity: .85;
+  }
+
+  // background-color =======================
+  // blue #007bff
+  &.primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: white;
+  }
+
+  // gray #6c757d
+  &.secondary {
+    background-color: $secondary;
+    border-color: $secondary;
+    color: white;
+  }
+
+  // green #28a745
+  &.success {
+    background-color: $success;
+    border-color: $success;
+    color: white;
+  }
+
+  // red #dc3545
+  &.danger {
+    background-color: $danger;
+    border-color: $danger;
+    color: white;
+  }
+
+  // orange #ffc107
+  &.warning {
+    background-color: $warning;
+    border-color: $warning;
+    color: black;
+  }
+
+  // black #343a40
+  &.dark {
+    background-color: $dark;
+    border-color: $dark;
+    color: white;
+  }
+
+  // outlined-color ===================
+  // blue
+  &.outline {
+    background-color: white;
+    border-color: $default;
+    color: $default;
+
+    &:hover {
+      background-color: $default;
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  &.outline-primary {
+    background-color: white;
+    border-color: $primary;
+    color: $primary;
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  // gray
+  &.outline-secondary {
+    background-color: white;
+    border-color: $secondary;
+    color: $secondary;
+
+    &:hover {
+      background-color: $secondary;
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  // green
+  &.outline-success {
+    background-color: white;
+    border-color: $success;
+    color: $success;
+
+    &:hover {
+      background-color: $success;
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  // red
+  &.outline-danger {
+    background-color: white;
+    border-color: $danger;
+    color: $danger;
+
+    &:hover {
+      background-color: $danger;
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  // orange
+  &.outline-warning {
+    background-color: white;
+    border-color: $warning;
+    color: $warning;
+
+    &:hover {
+      background-color: $warning;
+      color: black;
+      opacity: 1;
+    }
+  }
+
+  // dark
+  &.outline-dark {
+    background-color: white;
+    border-color: $dark;
+    color: $dark;
+
+    &:hover {
+      background-color: $dark;
+      color: white;
+      opacity: 1;
+    }
+  }
+}
